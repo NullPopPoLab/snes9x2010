@@ -965,7 +965,7 @@ static bool8 BSX_LoadBIOS (void)
 	strcpy(path, S9xGetDirectory(BIOS_DIR));
 	strcat(path, SLASH_STR);
 	strcpy(name, path);
-	strcat(name, "snes/BS-X.bin");
+	strcat(name, "BS-X.bin");
 
 	fp = filestream_open(name, RETRO_VFS_FILE_ACCESS_READ,
 			RETRO_VFS_FILE_ACCESS_HINT_NONE);
@@ -973,7 +973,7 @@ static bool8 BSX_LoadBIOS (void)
 	if (!fp)
 	{
 		strcpy(name, path);
-		strcat(name, "snes/BS-X.bios");
+		strcat(name, "BS-X.bios");
 
 		fp = filestream_open(name, RETRO_VFS_FILE_ACCESS_READ,
 				RETRO_VFS_FILE_ACCESS_HINT_NONE);

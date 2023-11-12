@@ -1129,7 +1129,7 @@ bool8 LoadSufamiTurbo (const char *cartA, const char *cartB)
 
 	strcpy(path, S9xGetDirectory(BIOS_DIR));
 	strcat(path, SLASH_STR);
-	strcat(path, "snes/STBIOS.bin");
+	strcat(path, "STBIOS.bin");
 
 	fp = filestream_open(path, RETRO_VFS_FILE_ACCESS_READ,
 			RETRO_VFS_FILE_ACCESS_HINT_NONE);
